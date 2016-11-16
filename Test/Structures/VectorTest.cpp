@@ -3,7 +3,7 @@
 //
 #include <random>
 #include "gtest/gtest.h"
-#include "../../Src/Structures/Vector.h"
+#include "../../Src/Structures/VectorTest.h"
 
 using namespace ditwo;
 void initVectorTest()
@@ -209,7 +209,6 @@ TEST(VectorGeneralTests, eraseTest)
 	for (size_t i = 0; i < AMOUNT; i++)
 	{
 		int curEraseI = (abs(rand())) % removedData.size();
-		int curErase = removedData[curEraseI];
 		removedData.erase(removedData.begin() + curEraseI);
 		v.erase(curEraseI);
 		ASSERT_EQ(removedData.size(), v.size());
@@ -238,7 +237,6 @@ TEST(VectorGeneralTests, eraseMultiTest)
 	for (size_t i = 0; i < AMOUNT; i++)
 	{
 		int curEraseI = (abs(rand())) % removedData.size();
-		int curErase = removedData[curEraseI];
 		removedData.erase(removedData.begin() + curEraseI);
 		v.erase(curEraseI * DATA_AMOUNT, (curEraseI + 1) * DATA_AMOUNT);
 		ASSERT_EQ(removedData.size() * DATA_AMOUNT, v.size());
@@ -305,7 +303,7 @@ TEST(VectorTypesTests, boolTypeTest)
 class CustomType
 {
 public:
-	CustomType(int num)
+	explicit CustomType(int num)
 	{
 		this->num = num;
 	}

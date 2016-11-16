@@ -4,7 +4,7 @@
 
 #ifndef DITWO_VECTOR_CPP
 #define DITWO_VECTOR_CPP
-#include "Vector.h"
+#include "VectorTest.h"
 
 namespace ditwo
 {
