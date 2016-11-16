@@ -2,8 +2,8 @@
 // Created by amit on 14/11/2016.
 //
 
-#ifndef _MANMEMGENERALTYPES_H
-#define _MANMEMGENERALTYPES_H
+#ifndef DITWO_GENERALTYPES_H
+#define DITWO_GENERALTYPES_H
 #include <type_traits>
 
 #define NOEXPECT_NOTHROW_DEFAULT_CONSTRACTUR(type) noexcept(std::is_nothrow_default_constructible<type>::value)

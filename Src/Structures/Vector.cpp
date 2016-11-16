@@ -2,8 +2,8 @@
 // Created by amit on 14/11/2016.
 //
 
-#ifndef _VECTOR_CPP
-#define _VECTOR_CPP
+#ifndef DITWO_VECTOR_CPP
+#define DITWO_VECTOR_CPP
 #include "Vector.h"
 
 namespace ditwo

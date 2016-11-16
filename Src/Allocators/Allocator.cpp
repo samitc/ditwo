@@ -2,8 +2,8 @@
 // Created by amit on 14/11/2016.
 //
 
-#ifndef _ALLOCATOR_CPP_
-#define _ALLOCATOR_CPP_
+#ifndef DITWO_ALLOCATOR_CPP
+#define DITWO_ALLOCATOR_CPP
 #include "Allocator.h"
 #include <utility>
 

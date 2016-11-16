@@ -2,10 +2,10 @@
 // Created by amit on 14/11/2016.
 //
 
-#ifndef _ALLOCATOR_H
-#define _ALLOCATOR_H
+#ifndef DITWO_ALLOCATOR_H
+#define DITWO_ALLOCATOR_H
 #include <new>
-#include "../../GeneralTypes.h"
+#include "../GeneralTypes.h"
 
 namespace ditwo
 {

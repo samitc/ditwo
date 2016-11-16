@@ -2,9 +2,9 @@
 // Created by amit on 14/11/2016.
 //
 
-#ifndef _VECTOR_H
-#define _VECTOR_H
-#include "../../GeneralTypes.h"
+#ifndef DITWO_VECTOR_H
+#define DITWO_VECTOR_H
+#include "../GeneralTypes.h"
 #include "../Allocators/Allocator.h"
 
 namespace ditwo

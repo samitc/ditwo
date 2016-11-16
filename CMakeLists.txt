@@ -15,7 +15,7 @@ set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake-modules")
 INCLUDE(AddGTest)
 if (AddGTest_FOUND)
     set(TEST_SOURCE_FILES
-            Main.cpp Test/Structures/Vector.cpp)
+            Test/Main.cpp Test/Structures/Vector.cpp)
     add_executable(ditwoTesting ${HEADER_FILES} ${TEST_SOURCE_FILES})
 
     add_dependencies(ditwoTesting gtest)
