@@ -43,6 +43,7 @@ else (NOT GIT_FOUND)
 
     ExternalProject_Add(gtest
             GIT_REPOSITORY https://github.com/google/googletest.git
+			GIT_TAG release-1.8.0
             TIMEOUT 10
             PREFIX "${GTEST_PREFIX}"
             CMAKE_ARGS "${GTEST_CMAKE_ARGS}"
@@ -57,7 +58,7 @@ else (NOT GIT_FOUND)
     set(LIB_SUFFIX "${CMAKE_STATIC_LIBRARY_SUFFIX}")
     set(GTEST_LOCATION "${GTEST_PREFIX}/src/gtest-build")
     set(GTEST_DEBUG_LIBRARIES
-            "${LIB_PREFIX}gtest${LIB_SUFFIX}"
+            "${LIB_PREFIX}gtest${LIB_SUFFIX}${CMAKE_DEBUG_POSTFIX}"
             "${CMAKE_THREAD_LIBS_INIT}")
     SET(GTEST_RELEASE_LIBRARIES
             "${LIB_PREFIX}gtest${LIB_SUFFIX}"
