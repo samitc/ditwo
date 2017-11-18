@@ -4,12 +4,14 @@ project(ditwo)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 
 set(HEADER_FILES
-        Src/Structures/VectorTest.h
+        Src/Structures/VectorInterface.h
+        Src/Structures/Vector.h
         Src/Allocators/Allocator.h
-        )
+        Src/Structures/BoolVector.h)
 set(SOURCE_FILES
         Src/Structures/Vector.cpp
-        Src/Allocators/Allocator.cpp)
+        Src/Allocators/Allocator.cpp
+        Src/Structures/BoolVector.cpp)
 
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake-modules")
 INCLUDE(AddGTest)

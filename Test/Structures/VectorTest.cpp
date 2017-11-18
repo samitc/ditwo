@@ -3,11 +3,12 @@
 //
 #include <random>
 #include "gtest/gtest.h"
-#include "../../Src/Structures/VectorTest.h"
-
+#include "../../Src/Structures/Vector.h"
+#include "../../Src/Structures/BoolVector.h"
 using namespace ditwo;
 void initVectorTest()
 {
+	Vector<bool> tewst;
 	srand((unsigned int) time(nullptr));
 }
 TEST(VectorGeneralTests, GeneralTest)
